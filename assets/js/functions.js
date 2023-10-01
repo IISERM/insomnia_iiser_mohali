@@ -176,27 +176,28 @@ $( document ).ready(function() {
   }
 
   function workSlider() {
-
-    $('.slider--prev, .slider--next').click(function() {
-
+    $('.events-slider--prev, .events-slider--next').click(function() {
       var $this = $(this),
-          curLeft = $('.slider').find('.slider--item-left'),
-          curLeftPos = $('.slider').children().index(curLeft),
-          curCenter = $('.slider').find('.slider--item-center'),
-          curCenterPos = $('.slider').children().index(curCenter),
-          curRight = $('.slider').find('.slider--item-right'),
-          curRightPos = $('.slider').children().index(curRight),
-          totalWorks = $('.slider').children().length,
-          $left = $('.slider--item-left'),
-          $center = $('.slider--item-center'),
-          $right = $('.slider--item-right'),
-          $item = $('.slider--item');
+          curLeft = $('.events').find('.slider--item-left'),
+          curLeftPos = $('.events').children().index(curLeft),
+          curCenter = $('.events').find('.slider--item-center'),
+          curCenterPos = $('.events').children().index(curCenter),
+          curRight = $('.events').find('.slider--item-right'),
+          curRightPos = $('.events').children().index(curRight),
+          totalWorks = $('.events').find('slider').children().length,
+          // $left = $('.events.slider--item-left'),
+          // $center = $('.slider--item-center'),
+          // $right = $('.slider--item-right'),
+          $left = $('.events').find('.slider--item-left'),
+          $center = $('.events').find('.slider--item-center'),
+          $right = $('.events').find('.slider--item-right'),
+          $item = $('.events').find('.slider--item');
 
-      $('.slider').animate({ opacity : 0 }, 400);
+          $('.events .slider').animate({ opacity : 0 }, 400);
 
       setTimeout(function(){
 
-      if ($this.hasClass('slider--next')) {
+      if ($this.hasClass('events-slider--next')) {
         if (curLeftPos < totalWorks - 1 && curCenterPos < totalWorks - 1 && curRightPos < totalWorks - 1) {
           $left.removeClass('slider--item-left').next().addClass('slider--item-left');
           $center.removeClass('slider--item-center').next().addClass('slider--item-center');
@@ -220,7 +221,7 @@ $( document ).ready(function() {
           }
         }
       }
-      else {
+      else if ($this.hasClass('events-slider--prev')) {
         if (curLeftPos !== 0 && curCenterPos !== 0 && curRightPos !== 0) {
           $left.removeClass('slider--item-left').prev().addClass('slider--item-left');
           $center.removeClass('slider--item-center').prev().addClass('slider--item-center');
@@ -247,7 +248,8 @@ $( document ).ready(function() {
 
     }, 400);
 
-    $('.slider').animate({ opacity : 1 }, 400);
+    // $('.events').find('slider').animate({ opacity : 1 }, 400);
+    $('.events .slider').animate({ opacity : 0 }, 400);
 
     });
 

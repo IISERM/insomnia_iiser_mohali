@@ -1035,8 +1035,8 @@ body {
 	height: 300px
 }
 
-.work--lockup .slider--next,
-.work--lockup .slider--prev {
+.work--lockup .events-slider--next,
+.work--lockup .events-slider--prev {
 	position: absolute;
 	top: 160px;
 	display: -webkit-box;
@@ -1058,17 +1058,17 @@ body {
 	cursor: pointer
 }
 
-.work--lockup .slider--next svg,
-.work--lockup .slider--prev svg {
+.work--lockup .events-slider--next svg,
+.work--lockup .events-slider--prev svg {
 	width: 20px;
 	fill: #fff
 }
 
-.work--lockup .slider--next {
+.work--lockup .events-slider--next {
 	right: 0
 }
 
-.work--lockup .slider--prev {
+.work--lockup .events-slider--prev {
 	left: 0
 }
 
