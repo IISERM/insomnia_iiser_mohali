@@ -83,6 +83,7 @@ body{
     background-position: 50% 50%;
     display: block;
 }
+
 #navigation-content{
     height: 100vh;
     width: 100%;
@@ -236,6 +237,7 @@ body{
     height: 100vh;
 
 }
+
 .header-content{
     height: 100vh;
     width: 100%;
