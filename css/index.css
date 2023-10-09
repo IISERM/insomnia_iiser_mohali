@@ -767,7 +767,7 @@ body{
 .portfolio-header{
     height: auto;
     width: 100%;
-    text-align: center;
+    text-align: right;
     align-items: center;
     justify-content: center;
     font-size: 45px;
