@@ -1,9 +1,3 @@
-/*!
-  * Item: Willy Wonka Theme
-  * Description: Personal Portfolio Website Template
-  * Author/Developer: Sujal
-  * Version: v1
-*/
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
@@ -408,7 +402,7 @@ body{
     100%{ transform : translateX(100%) }
 }
 .color{
-    color: #666480;
+    color: #6f7efd;
     transition: all .4s ease;
 }
 #about{
@@ -988,7 +982,8 @@ padding-bottom: 40px;
 .blogs .img{
     height: 100%;
     width: 80%;
-    overflow: hidden;
+    overflow: visible;
+    object-fit: scale-down;
     transition: all .65s ease;
     position: relative;
 }
@@ -1038,10 +1033,10 @@ padding-bottom: 40px;
     letter-spacing: 1px;
 }
 .blogs:hover .img{
-      transform: translateY(-70%);
+      transform: translateY(-80%);
 }
 .blogs:hover .blog-text{
-    transform: translateY(-70%);
+    transform: translateY(-80%);
 }
 .blogs a{
     text-decoration: none;
@@ -2457,10 +2452,10 @@ for tabs and large phones
         letter-spacing: 1px;
       }
     .blogs:hover .img{
-          transform: translateY(-70%);
+          transform: translateY(-80%);
       }
     .blogs:hover .blog-text{
-        transform: translateY(-70%);
+        transform: translateY(-80%);
     }
     .contact-header{
         height: auto;
